@@ -15,6 +15,9 @@ module.exports = (app: any) => {
     //to remove Product
     app.delete('/removeProduct/:id', Controller.removeProduct);
 
+    //to remove Product
+    app.delete('/removeSeller/:sellerID', Controller.removeSeller);
+
     //if invalid url passed
     app.get('*', Controller.NotFound);
 }
