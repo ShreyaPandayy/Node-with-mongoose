@@ -2,6 +2,7 @@ module.exports = (app: any) => {
 
     const Middleware = require('../Middleware/Validator');
     const Controller = require('../Controller/Controller');
+    const Seller_Controller = require('../Controller/Seller_Controller');
 
     //insert Product
     app.post('/insert', Middleware.Validate, Controller.insertProduct);
