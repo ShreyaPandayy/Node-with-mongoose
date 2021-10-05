@@ -21,6 +21,20 @@
   "quantity": 2
 },{
   "_id": {
+    "$oid": "60f05323673f2b34b0e47979"
+  },
+  "name": "Car",
+  "price": 450000,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "60f05323673f2b34b0e47979"
+  },
+  "name": "Car",
+  "price": 450000,
+  "quantity": 2
+},{
+  "_id": {
     "$oid": "60f05344673f2b34b0e4797b"
   },
   "name": "MacBookPro",
@@ -33,4 +47,18 @@
   "name": "Cycle",
   "price": 2700,
   "quantity": 5
+},{
+  "_id": {
+    "$oid": "60f05323673f2b34b0e47979"
+  },
+  "name": "Car",
+  "price": 450000,
+  "quantity": 2
+},{
+  "_id": {
+    "$oid": "60f05323673f2b34b0e47979"
+  },
+  "name": "Car",
+  "price": 450000,
+  "quantity": 2
 }]
