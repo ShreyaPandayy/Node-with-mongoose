@@ -83,6 +83,28 @@ exports.editProduct = async (req, res) => {
     }
   };
 
+  exports.addToCart = async (req, res) => {
+    try {
+      const shoppingCart : string[]= [];
+      const productId = req.params.productId;
+      const productData = await product.findById(productId);
+      // Retrieve product details based on the product ID (you need to implement this)
+     
+  
+      if (!productData) {
+        return res.status(404).send({ message: 'Product not found' });
+      }
+  
+      // Add the product to the shopping cart
+      shoppingCart.push(productData);
+  
+      res.send({ message: 'Product added to the cart', shoppingCart });
+    } catch (error) {
+      console.error(error);
+      res.status(500).send({ message: 'Internal server error' });
+    }
+  };
+
   
 
   
