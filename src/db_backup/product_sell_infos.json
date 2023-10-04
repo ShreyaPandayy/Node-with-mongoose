@@ -1,64 +1,98 @@
-[{
-  "_id": {
-    "$oid": "60f05304673f2b34b0e47975"
+[
+  {
+    "_id": {
+      "$oid": "60f05304673f2b34b0e47975"
+    },
+    "name": "mobile",
+    "price": 12000,
+    "quantity": 12
   },
-  "name": "mobile",
-  "price": 12000,
-  "quantity": 12
-},{
-  "_id": {
-    "$oid": "60f05310673f2b34b0e47977"
+  {
+    "_id": {
+      "$oid": "60f05310673f2b34b0e47977"
+    },
+    "name": "Laptop",
+    "price": 43000,
+    "quantity": 12
   },
-  "name": "Laptop",
-  "price": 43000,
-  "quantity": 12
-},{
-  "_id": {
-    "$oid": "60f05323673f2b34b0e47979"
+  {
+    "_id": {
+      "$oid": "60f05323673f2b34b0e47979"
+    },
+    "name": "Car",
+    "price": 450000,
+    "quantity": 2
   },
-  "name": "Car",
-  "price": 450000,
-  "quantity": 2
-},{
-  "_id": {
-    "$oid": "60f05323673f2b34b0e47979"
+  {
+    "_id": {
+      "$oid": "60f05304673f2b34b0e47975"
+    },
+    "name": "mobile",
+    "price": 12000,
+    "quantity": 12
   },
-  "name": "Car",
-  "price": 450000,
-  "quantity": 2
-},{
-  "_id": {
-    "$oid": "60f05323673f2b34b0e47979"
+  {
+    "_id": {
+      "$oid": "60f05323673f2b34b0e47979"
+    },
+    "name": "Car",
+    "price": 450000,
+    "quantity": 2
   },
-  "name": "Car",
-  "price": 450000,
-  "quantity": 2
-},{
-  "_id": {
-    "$oid": "60f05344673f2b34b0e4797b"
+  {
+    "_id": {
+      "$oid": "60f05323673f2b34b0e47979"
+    },
+    "name": "Car",
+    "price": 450000,
+    "quantity": 2
   },
-  "name": "MacBookPro",
-  "price": 92000,
-  "quantity": 1
-},{
-  "_id": {
-    "$oid": "60f05362673f2b34b0e4797d"
+  {
+    "_id": {
+      "$oid": "60f05344673f2b34b0e4797b"
+    },
+    "name": "MacBookPro",
+    "price": 92000,
+    "quantity": 1
   },
-  "name": "Cycle",
-  "price": 2700,
-  "quantity": 5
-},{
-  "_id": {
-    "$oid": "60f05323673f2b34b0e47979"
+  {
+    "_id": {
+      "$oid": "60f05362673f2b34b0e4797d"
+    },
+    "name": "Cycle",
+    "price": 2700,
+    "quantity": 5
   },
-  "name": "Car",
-  "price": 450000,
-  "quantity": 2
-},{
-  "_id": {
-    "$oid": "60f05323673f2b34b0e47979"
+  {
+    "_id": {
+      "$oid": "60f05323673f2b34b0e47979"
+    },
+    "name": "Car",
+    "price": 450000,
+    "quantity": 2
   },
-  "name": "Car",
-  "price": 450000,
-  "quantity": 2
-}]
+  {
+    "_id": {
+      "$oid": "60f05362673f2b34b0e4797d"
+    },
+    "name": "Cycle",
+    "price": 2700,
+    "quantity": 5
+  },
+  {
+    "_id": {
+      "$oid": "60f05323673f2b34b0e47979"
+    },
+    "name": "Car",
+    "price": 450000,
+    "quantity": 2
+  },
+  {
+    "_id": {
+      "$oid": "60f05323673f2b34b0e47979"
+    },
+    "name": "Car",
+    "price": 450000,
+    "quantity": 2
+  }
+]
