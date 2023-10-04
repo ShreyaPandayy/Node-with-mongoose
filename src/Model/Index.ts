@@ -9,7 +9,7 @@ module.exports = () => {
       useUnifiedTopology: true,
       useFindAndModify: false,
     },
-    (err: any) =>
+    (err: Error) =>
       err
         ? console.log("Enable to connect to the database due to:", err)
         : console.log("MongoDB connection successful!")
