@@ -1,23 +1,25 @@
 export default () => {
-    const Mongoose = require("mongoose");
+  const Mongoose = require("mongoose");
 
-    const productSchema = new Mongoose.Schema({
+  const productSchema = new Mongoose.Schema(
+    {
+      name: {
+        type: String,
+        require: true,
+      },
+      price: {
+        type: Number,
+        require: true,
+      },
+      quantity: {
+        type: Number,
+        require: true,
+      },
+    },
+    {
+      versionKey: false,
+    }
+  );
 
-        name: {
-            type: String,
-            require: true
-        },
-        price: {
-            type: Number,
-            require: true
-        },
-        quantity: {
-            type: Number,
-            require: true
-        }
-    }, {
-        versionKey: false
-    });
-
-    return Mongoose.model('Product_sell_info', productSchema);
-}
+  return Mongoose.model("Product_sell_info", productSchema);
+};
