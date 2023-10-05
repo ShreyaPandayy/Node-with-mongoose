@@ -20,7 +20,11 @@ module.exports = (app: any) => {
     app.delete('/removeSeller/:sellerID', Controller.removeSeller);
     // edit product
     app.put('/removeSeller/:sellerID', Controller.removeSeller);
+
     app.get('/calculateTotalCost', Controller.calculateTotalCost);
+
+    app.get('/countCartItems', Controller.countCartItems);
+
 
     //if invalid url passed
     app.get('*', Controller.NotFound);
