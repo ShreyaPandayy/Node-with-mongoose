@@ -3,6 +3,7 @@ import seller_model from '../Model/Seller_info';
 const product = product_model();
 const seller = seller_model();
 
+const shoppingCart : any[]= [];
 
 exports.NotFound = (req: any, res: any) => res.send({ message: 'invalid URL!' });
 
@@ -85,7 +86,7 @@ exports.editProduct = async (req, res) => {
 
   exports.addToCart = async (req, res) => {
     try {
-      const shoppingCart : string[]= [];
+     
       const productId = req.params.productId;
       const productData = await product.findById(productId);
       // Retrieve product details based on the product ID (you need to implement this)
@@ -107,7 +108,23 @@ exports.editProduct = async (req, res) => {
 
   
 
-  
+  // Controller.js
+
+// Calculate the total cost of items in the shopping cart
+exports.calculateTotalCost = (req, res) => {
+  try {
+    // Assuming you have a shoppingCart array with cart items
+    const totalCost = shoppingCart.reduce((total, item) => {
+      return total + item.price * item.quantity;
+    }, 0);
+
+    res.send({ totalCost });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ message: 'Internal server error' });
+  }
+};
+
   
   
   
