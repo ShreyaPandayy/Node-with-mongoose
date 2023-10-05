@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 //connect to MongoDB
-require('./src/Modal')();
+require('./src/Model')();
 
 //call route
 require('./src/Router/Router')(app);
