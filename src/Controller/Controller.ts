@@ -2,7 +2,7 @@ import product_model from '../Model/Product_info';
 import seller_model from '../Model/Seller_info';
 const product = product_model();
 const seller = seller_model();
-
+const shoppingCart : string[]= [];
 
 exports.NotFound = (req: any, res: any) => res.send({ message: 'invalid URL!' });
 
@@ -85,7 +85,7 @@ exports.editProduct = async (req, res) => {
 
   exports.addToCart = async (req, res) => {
     try {
-      const shoppingCart : string[]= [];
+   
       const productId = req.params.productId;
       const productData = await product.findById(productId);
       // Retrieve product details based on the product ID (you need to implement this)
@@ -104,6 +104,22 @@ exports.editProduct = async (req, res) => {
       res.status(500).send({ message: 'Internal server error' });
     }
   };
+
+  // Controller.js
+
+// Count the number of items in the shopping cart
+exports.countCartItems = (req, res) => {
+  try {
+    // Assuming you have a shoppingCart array with cart items
+    const itemCount = shoppingCart.length;
+
+    res.send({ itemCount });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send({ message: 'Internal server error' });
+  }
+};
+
 
   
 
