@@ -8,6 +8,7 @@ MongoClient.connect(url, function (err, db) {
 
   const dbo = db.db("mydb");
 
+  // To get customers data by mongoose query
   dbo.collection("customers").findOne({}, function (err, result) {
     if (err) {
       throw err;

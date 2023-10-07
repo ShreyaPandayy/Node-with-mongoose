@@ -1,4 +1,6 @@
 module.exports = (app: any) => {
+
+    // List of controller and middlewares
     const Middleware = require("../Middleware/Validator");
     const Controller = require("../Controller/Controller");
   
