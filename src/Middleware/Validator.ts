@@ -1,7 +1,7 @@
 import Joi from "joi";
 
 exports.Validate = (req: any, res: any, cb: any) => {
-  const SellerSchema: any = Joi.object({
+  const SellerSchema = Joi.object({
     name: Joi.string()
       .pattern(new RegExp("^[a-zA-z]{3,50}$"))
       .min(3)
@@ -12,7 +12,7 @@ exports.Validate = (req: any, res: any, cb: any) => {
     email: Joi.string().email().required(),
   });
 
-  const Seller: any = {
+  const Seller = {
     name: req.body.name,
     price: req.body.price,
     quantity: req.body.quantity,
