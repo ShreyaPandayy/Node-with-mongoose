@@ -8,6 +8,7 @@ const seller = SellerInfo();
 exports.NotFound = (req: Request, res: Response) =>
   res.status(404).send({ message: "invalid URL!" });
 
+// Controller to insert product
 exports.insertProduct = async (req: Request, res: Response) => {
   const data = new product({
     name: req.body.name,
@@ -20,6 +21,7 @@ exports.insertProduct = async (req: Request, res: Response) => {
   res.send({ message: "new Product has been added", result });
 };
 
+// To get list of products
 exports.listProduct = async (req: Request, res: Response) => {
   const data = await product.find();
 
@@ -30,6 +32,7 @@ exports.listProduct = async (req: Request, res: Response) => {
   return res.status(200).send({ message: "No Product data to display" });
 };
 
+// To remove product by id
 exports.removeProduct = async (req: Request, res: Response) => {
   const product_id: string = req.params.id;
   const deletedData = await product.findByIdAndDelete(product_id);
@@ -44,6 +47,7 @@ exports.removeProduct = async (req: Request, res: Response) => {
   return res.status(200).send({ message: "No data to Delete" });
 };
 
+// To remove seller by id
 exports.removeSeller = async (req: Request, res: Response) => {
   const seller_id: string = req.params.id;
   const deletedData = await seller.findByIdAndDelete(seller_id);
@@ -58,6 +62,7 @@ exports.removeSeller = async (req: Request, res: Response) => {
   return res.status(200).send({ message: "No data to Delete" });
 };
 
+// To calclulate profit
 exports.showProfit = async (req: Request, res: Response) => {
   const profit: any = await product.aggregate([
     {
